@@ -16,6 +16,8 @@ $db = new dbConnect;
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
     <title>Document</title>
     
 </head>
@@ -1316,12 +1318,12 @@ $db = new dbConnect;
                 </div><br><br>
                 <div class="chantierCreateDiv3">
                     <div class='chantierCreateUploadAvant'>
-                        <label for="chantierAV">Sélectionner l'image AVANT: </label><br>
+                        <label for="chantierAV" class='labelChantierAv'>Sélectionner l'image AVANT: </label><br>
                         <input class='inputAjoutChantierImg' type="file" name="fileToUploadAvant" id="fileToUploadAvant">
                     </div>
                     <p class="slash">/</p> 
                     <div class="chantierCreateUploadApres">
-                        <label for="chantierAP">Sélectionner l'image APRES: </label><br>
+                        <label for="chantierAP" class='labelChantierAp'>Sélectionner l'image APRES: </label><br>
                         <input class='inputAjoutChantierImg' type="file" name="fileToUploadApres" id="fileToUploadApres">
                     </div>
                 </div>

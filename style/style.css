@@ -42,7 +42,7 @@ body {
 .titre{
     display: flex;
     align-items: center;
-    font-size: 75px;
+    font-size: clamp(3rem, 4vw, 4rem);
     color: white;
 }
 .H1Logo{
@@ -61,6 +61,7 @@ body {
 .liHref{
     margin-inline: 10%;
     list-style: none;
+    white-space: nowrap;
 }
 
 #open{
@@ -229,7 +230,7 @@ body {
 }
 @media (max-width: 600px) {
     .titre{
-       font-size: 55px;
+       display: none;
     }
     .connecter{
     }
@@ -566,13 +567,15 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 
 .formAjoutChantier{
-    height: 60%;
+    height: 80%;
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-bottom: 40px;
 }
  
 .titreFormulaire{
@@ -585,9 +588,9 @@ fieldset {
     justify-content: space-evenly;
     align-items: center;
     width: 60%;
+    max-width: 700px;
     height: 100%;
     border: solid 2px;
-    
   }
   
 
@@ -628,20 +631,33 @@ legend {
 
 .inputAjoutChantier{
     width: 40%;
-    border: 1px black solid;
-
+    border: 2px black solid;
+    height: 24px;
+    min-width: 140px;
 }
 
 .inputAjoutChantierImg{
     width: 100%;
-    border: 1px black solid;
+    height: 24px;
+    margin-top: 5px;
 }
 
+.labelChantierAv, .labelChantierAp{
+    text-decoration: underline;
+}
+
+.formulaire label{
+    margin-block: 2px;
+    font-family: 'Average Sans', sans-serif;
+    font-weight: 600;
+}
 
 .selectCreate{
-    width: 40%;
-    border: solid 1px ;
+    width: 41%;
+    border: solid 2px ;
     background-color: #ffffff;
+    height: 28px;
+    min-width: 140px;
 }
 
 .submitAjoutChantier{
@@ -650,6 +666,7 @@ legend {
     border: none;
     background-color: #346077;
     color: #ffffff;
+    min-width: 60px;
 }
 
 
